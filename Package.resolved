@@ -3,16 +3,16 @@
     "pins": [
       {
         "package": "RxExpect",
-        "repositoryURL": "https://github.com/lcg5450/RxExpect.git",
+        "repositoryURL": "https://github.ncsoft.com/MediaTalkClientTeam/RxExpect.git",
         "state": {
           "branch": null,
-          "revision": "1108fb25a224dcd8b7cf6861ef30d203fe137c89",
+          "revision": "cd3a3187035d3aa23fe95e3d03a52f0b3dc4fc74",
           "version": null
         }
       },
       {
         "package": "RxSwift",
-        "repositoryURL": "https://github.com/lcg5450/RxSwift.git",
+        "repositoryURL": "https://github.ncsoft.com/MediaTalkClientTeam/RxSwift.git",
         "state": {
           "branch": null,
           "revision": "39a1766452d4b78ebb52caa327f29ebc918d23fd",
