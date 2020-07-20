@@ -11,8 +11,8 @@ let package = Package(
     .library(name: "ReactorKit", targets: ["ReactorKit"]),
   ],
   dependencies: [
-    .package(url: "https://github.ncsoft.com/MediaTalkClientTeam/RxSwift.git", .revision("39a1766452d4b78ebb52caa327f29ebc918d23fd")),
-    .package(url: "https://github.ncsoft.com/MediaTalkClientTeam/RxExpect.git", .revision("cd3a3187035d3aa23fe95e3d03a52f0b3dc4fc74"))
+    .package(url: "https://github.ncsoft.com/MediaTalkClientTeam/RxSwift.git", .revision("f8d69339ba6081e0557b40a58856cc4414fa048c")),
+    .package(url: "https://github.ncsoft.com/MediaTalkClientTeam/RxExpect.git", .revision("51789ee81011c646988ae59c4ba8f0184c2b0181"))
   ],
   targets: [
     .target(name: "ReactorKit", dependencies: ["ReactorKitRuntime", "RxSwift"]),
