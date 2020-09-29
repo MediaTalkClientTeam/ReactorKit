@@ -16,7 +16,7 @@ let package = Package(
     .package(url: "https://github.ncsoft.com/MediaTalkClientTeam/RxExpect.git", .revision("3e78399e9c281298c09efb44838c8e98e2fdd5c6"))
   ],
   targets: [
-    .target(name: "ReactorKit", dependencies: ["ReactorKitRuntime", "RxSwift", "WeakMapTable"]),
+    .target(name: "ReactorKit", dependencies: ["ReactorKitRuntime", "RxSwift", "RxCocoa", "RxRelay", "WeakMapTable"]),
     .target(name: "ReactorKitRuntime", dependencies: []),
     .testTarget(name: "ReactorKitTests", dependencies: ["ReactorKit", "RxExpect"]),
   ],
