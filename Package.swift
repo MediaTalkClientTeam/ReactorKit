@@ -11,9 +11,9 @@ let package = Package(
     .library(name: "ReactorKit", targets: ["ReactorKit"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/ReactiveX/RxSwift.git", .revision("06e004a45db47fce1a75894895e12f3adef99cbd")),
+    .package(url: "https://github.com/ReactiveX/RxSwift.git", .revision("aa5917a1b359b7de47d6b91424d98350849d1b55")),
     .package(url: "https://github.com/ReactorKit/WeakMapTable.git", .upToNextMajor(from: "1.1.0")),
-    .package(url: "https://github.ncsoft.com/MediaTalkClientTeam/RxExpect.git", .revision("0cdfe18a5f97a7a259c3d6e32e4f0eeac330b7f2"))
+    .package(url: "https://github.ncsoft.com/MediaTalkClientTeam/RxExpect.git", .revision("3e78399e9c281298c09efb44838c8e98e2fdd5c6"))
   ],
   targets: [
     .target(name: "ReactorKit", dependencies: ["ReactorKitRuntime", "RxSwift", "WeakMapTable"]),
