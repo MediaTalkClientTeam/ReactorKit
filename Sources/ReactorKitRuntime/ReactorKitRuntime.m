@@ -7,9 +7,11 @@
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
     [self swizzleInitializeOfClassNamed:@"UIViewController"];
-//    #if !TARGET_OS_MACCATALYST
-//    [self swizzleInitializeOfClassNamed:@"NSViewController"];
-//    #endif
+    #if !TARGET_OS_MACCATALYST
+      if (!(@available(iOS 14.0, *) && [NSProcessInfo processInfo].isiOSAppOnMac)) {
+          [self swizzleInitializeOfClassNamed:@"NSViewController"];
+      }
+    #endif
   });
 }
 
