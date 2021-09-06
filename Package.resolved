@@ -2,21 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "RxExpect",
-        "repositoryURL": "https://github.ncsoft.com/MediaTalkClientTeam/RxExpect.git",
-        "state": {
-          "branch": null,
-          "revision": "cd3a3187035d3aa23fe95e3d03a52f0b3dc4fc74",
-          "version": null
-        }
-      },
-      {
         "package": "RxSwift",
-        "repositoryURL": "https://github.ncsoft.com/MediaTalkClientTeam/RxSwift.git",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
         "state": {
           "branch": null,
-          "revision": "002d325b0bdee94e7882e1114af5ff4fe1e96afa",
-          "version": "5.1.1"
+          "revision": "7c17a6ccca06b5c107cfa4284e634562ddaf5951",
+          "version": "6.2.0"
         }
       },
       {
@@ -24,8 +15,8 @@
         "repositoryURL": "https://github.com/ReactorKit/WeakMapTable.git",
         "state": {
           "branch": null,
-          "revision": "eda6ba374666bb2177034b6418025103cc72bcbf",
-          "version": "1.1.0"
+          "revision": "9580560169b4b48ba2affe7badba6a7f360495f4",
+          "version": "1.2.0"
         }
       }
     ]

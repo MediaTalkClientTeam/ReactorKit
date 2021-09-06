@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -11,14 +11,29 @@ let package = Package(
     .library(name: "ReactorKit", targets: ["ReactorKit"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/ReactiveX/RxSwift.git", .revision("61e9cff0613854430cbd252f66883b1f4fb0892d")),
-    .package(url: "https://github.com/ReactorKit/WeakMapTable.git", .revision("9580560169b4b48ba2affe7badba6a7f360495f4")),
-    .package(url: "https://github.com/MediaTalkClientTeam/RxExpect.git", .revision("95370e11402f155d2fe9954fe52458972a690101"))
+    .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0")),
+    .package(url: "https://github.com/ReactorKit/WeakMapTable.git", .upToNextMajor(from: "1.1.0"))
   ],
   targets: [
-    .target(name: "ReactorKit", dependencies: ["ReactorKitRuntime", "RxSwift", "RxCocoa", "RxRelay", "WeakMapTable"]),
-    .target(name: "ReactorKitRuntime", dependencies: []),
-    .testTarget(name: "ReactorKitTests", dependencies: ["ReactorKit", "RxExpect"]),
+    .target(
+      name: "ReactorKit",
+      dependencies: [
+        "ReactorKitRuntime",
+        "RxSwift",
+        "WeakMapTable"
+      ]
+    ),
+    .target(
+      name: "ReactorKitRuntime",
+      dependencies: []
+    ),
+    .testTarget(
+      name: "ReactorKitTests",
+      dependencies: [
+        "ReactorKit",
+        .product(name: "RxTest", package: "RxSwift")
+      ]
+    ),
   ],
   swiftLanguageVersions: [.v5]
 )
